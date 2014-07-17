@@ -57,10 +57,6 @@ PointerEventsPolyfill.prototype.register_mouse_events = function(){
             else
                 $(this).css('display','');
 
-             // fire the mouse event on the element below
-            e.target = underneathElem;
-            $(underneathElem).trigger(e);
-
             return false;
         }
         return true;
