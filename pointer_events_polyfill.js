@@ -49,8 +49,6 @@ PointerEventsPolyfill.prototype.register_mouse_events = function(){
              var origDisplayAttribute = $(this).css('display');
              $(this).css('display','none');
 
-             var underneathElem = document.elementFromPoint(e.clientX, e.clientY);
-
             if(origDisplayAttribute)
                 $(this)
                     .css('display', origDisplayAttribute);
